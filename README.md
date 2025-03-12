@@ -1,6 +1,17 @@
 # BYU-Pathway Worldwide Online
 ## WDD 330 - Web Frontend Development II
 
+## Sleep Outside Team 08
+- Esteban Spitale
+- Anna Kelsey
+- Stacy Yarrington
+- Jake Preciado
+- Joseph Dagohoy
+
+## Netlify Live Deployment
+[Sleep Outside Team 08](https://wdd330-sleepoutside-team08.netlify.app/)
+
+
 ### ⛺ SleepOutside Starter Code
 
  - This repository is the start of the SleepOutside web application project for WDD 330. The repository contains branches which are checkpoints for the team and individual assignments throughout the course.
