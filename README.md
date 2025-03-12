@@ -9,7 +9,7 @@
 - Joseph Dagohoy
 
 ## Netlify Live Deployment
--[Sleep Outside Team 08 Deployment](https://wdd330-sleepoutside-team08.netlify.app/)
+- [Sleep Outside Team 08 Deployment](https://wdd330-sleepoutside-team08.netlify.app/)
 
 
 ### ⛺ SleepOutside Starter Code
