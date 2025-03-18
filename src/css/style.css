@@ -56,6 +56,18 @@ header {
   bottom: -10px;
   background-color: white;
 }
+
+.categories {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.categories a img {
+  width: 100px;
+  height: auto;
+}
+
 .logo--square {
   font-size: var(--small-font);
   width: 110px;
