@@ -52,9 +52,17 @@ export default class ProductDetails {
   }
 
   addToCart() {
-    const cartItems = getLocalStorage('so-cart') || [];
-    cartItems.push(this.product);
-    setLocalStorage("so-cart", cartItems);
+    let cart = JSON.parse(localStorage.getItem('so-cart')) || [];
+    // Checks if the item is already in the cart, and adds 1 to the quantity if it is
+    const itemIndex = cart.findIndex(item => item.Id === this.product.Id);
+    if (itemIndex !== -1) {
+      cart[itemIndex].Quantity += 1;
+    } else {
+      this.product.Quantity = 1;
+      cart.push(this.product);
+    }
+    localStorage.setItem('so-cart', JSON.stringify(cart));
+    console.log("Updated cart:", cart);
   }
 
   renderProductDetails() {

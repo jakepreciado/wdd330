@@ -42,6 +42,7 @@ function removeItemFromCart(itemId) {
   renderCartContents();
 }
 
+
 document.querySelector('.product-list').addEventListener('click', function (event) {
   if (event.target && event.target.classList.contains('remove-item')) {
     event.preventDefault();
@@ -51,5 +52,7 @@ document.querySelector('.product-list').addEventListener('click', function (even
     }
   }
 });
+
+
 
 renderCartContents();
