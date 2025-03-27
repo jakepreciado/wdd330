@@ -221,8 +221,14 @@ button {
 .order__summary div {
   margin: 10px;
 }
+
 .order__summary div:not([id]) {
   font-weight: bold;
+}
+
+.checkout-btn a{
+  text-decoration: none;
+  color: white;
 }
 
 .modal {
@@ -236,6 +242,44 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.hide {
+  display: none;
+}
+
+.personal-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-header span{
+  margin: 22.41px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout__address,
+.checkout__name {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.checkout__address label,
+.checkout__name label {
+  margin: 5px 0;
+}
+
+.checkout__address input,
+.checkout__name input {
+  padding: 5px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
 }
 
 .modal.hidden {
