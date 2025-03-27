@@ -19,7 +19,6 @@ function renderCartContents() {
 
   const totalPrice = cartItems.reduce((sum, item) => sum + item.FinalPrice * item.Quantity, 0);
   total.textContent = `Order Total: $${totalPrice.toFixed(2)}`;
-
 }
 
 function cartItemTemplate(item) {
