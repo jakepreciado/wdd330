@@ -214,6 +214,78 @@ button {
   grid-column: 3;
 }
 
+.checkout fieldset {
+  margin-bottom: 20px;
+}
+
+.order__summary div {
+  margin: 10px;
+}
+.order__summary div:not([id]) {
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  width: 500px;
+  height: 300px;
+  color: white;
+  background-image: url('/images/modal-background.jpg');
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1002;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+
+#register-btn {
+  margin: auto;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+}
+
+#close-modal {
+  margin: auto;
+  background-color: #f44336;
+  color: white;
+}
+
 @media screen and (min-width: 500px) {
   body {
     max-width: 1080px;
