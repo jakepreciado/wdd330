@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sleep Outside | Checkout</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script src="../js/checkout.js" type="module"></script>
 </head>
 
@@ -20,7 +20,7 @@
         <input type="hidden" name="orderDate" id="orderDate" required>
 
         <fieldset>
-          <legend></legend>
+          <legend><strong>Personal Information</strong></legend>
           <div class="checkout__name">
             <label for="fname">First Name</label>
             <input type="text" name="fname" id="fname" required>
@@ -40,7 +40,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Payment</legend>
+          <legend><strong>Payment</strong></legend>
           <div class="checkout__payment">
             <label for="cardNumber">Card Number</label>
             <input type="text" name="cardNumber" id="cardNumber" required>
@@ -52,18 +52,18 @@
         </fieldset>
 
         <fieldset class="checkout-summary">
-          <legend>Order Summary</legend>
+          <legend><strong>Order Summary</strong></legend>
 
           <div class="order__summary">
-            <div>Items</div>
+            <div>Items:</div>
             <div id="num-items"></div>
-            <div>Subtotal</div>
+            <div>Subtotal:</div>
             <div id="cartTotal"></div>
-            <div>Tax</div>
+            <div>Tax:</div>
             <div id="tax"></div>
-            <div>Shipping</div>
+            <div>Shipping:</div>
             <div id="shipping"></div>
-            <div>Total</div>
+            <div>Total:</div>
             <div id="orderTotal"></div>
           </div>
         </fieldset>
